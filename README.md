@@ -1,1 +1,1 @@
-# bole-card interface
+# gdq interface

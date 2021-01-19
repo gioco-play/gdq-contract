@@ -49,9 +49,19 @@ interface GDQServiceInterface {
      *
      * @param string $op_code
      * @param string $account
+     * @param float $amount
      * @return mixed
      */
-    function gameTransferOut(string $op_code, string $account);
+    function gameTransferOut(string $op_code, string $account, float $amount);
+
+    /**
+     * 取得錢包餘額
+     *
+     * @param string $op_code
+     * @param string $account
+     * @return mixed
+     */
+    function getBalance(string $op_code, string $account);
 
     /**
      * 上/下分失敗 訂單檢核
